@@ -43,10 +43,10 @@ function Head() {
                     <div className='app-header-bar-modal-close'>
                         <AiOutlineCloseSquare color='black' onClick={() => closeModal()} size='30px' />
                     </div>
-                    <LinkNavbar page={page} currentPage={currentPage} pageName={'/'} pageNameDisplay={'Accueil'}/>
-                    <LinkNavbar page={page} currentPage={currentPage} pageName={'/galerie'} pageNameDisplay={'Galerie'}/>
-                    <LinkNavbar page={page} currentPage={currentPage} pageName={'/contact'} pageNameDisplay={'Contact'}/>
-                    <LinkNavbar page={page} currentPage={currentPage} pageName={'/allergene'} pageNameDisplay={'Allergene'}/>
+                    <LinkNavbar setModal={setMenuModal} page={page} currentPage={currentPage} pageName={'/'} pageNameDisplay={'Accueil'}/>
+                    <LinkNavbar setModal={setMenuModal} page={page} currentPage={currentPage} pageName={'/galerie'} pageNameDisplay={'Galerie'}/>
+                    <LinkNavbar setModal={setMenuModal} page={page} currentPage={currentPage} pageName={'/contact'} pageNameDisplay={'Contact'}/>
+                    <LinkNavbar setModal={setMenuModal} page={page} currentPage={currentPage} pageName={'/allergene'} pageNameDisplay={'Allergene'}/>
                 </div>
             </div>
         </div>

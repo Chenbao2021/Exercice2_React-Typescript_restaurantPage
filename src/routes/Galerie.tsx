@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react'
 import Modal from 'react-modal';
 
-import Head from '../components/Head'
 import { photo1, photo2, photo3, photo4, photo5, photo6 } from '../assets/photos/photoMain'
 
 import './galerie.css'
@@ -49,7 +48,6 @@ function Galerie() {
     }, [currentIndex, images])
   return (
     <div>
-        <Head />
         <div className="galerie">
             <div className="galerie-head">
                 <p>Galerie photo</p>    

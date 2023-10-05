@@ -1,11 +1,9 @@
-import Head from '../components/Head'
 import { allergene1, allergene2, allergene3 } from '../assets/allergenes/allergeneMain'
 
 import './allergene.css'
 function Allergene() {
   return (
     <div>
-        <Head />
         <div className="allergene">
           <div className="allergene-head">
             <h1>Allergènes</h1>

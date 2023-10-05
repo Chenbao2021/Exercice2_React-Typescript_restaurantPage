@@ -1,11 +1,9 @@
-import Head from '../components/Head'
 import { contactImage } from '../assets/assetsMain'
 import './contact.css'
 
 function Contact() {
   return (
     <div>
-        <Head />
         <div className="contact">
           <div className="contact-head">
             <h1>Contact</h1>

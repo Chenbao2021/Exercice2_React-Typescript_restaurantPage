@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react'
-import {Head} from '../components/componentsMain';
 import { menu1, menu2, menu3 } from '../assets/menu/menuMain';
 
 import './accueil.css'
@@ -30,8 +29,6 @@ function Accueil() {
           }, [visibleImage]
     );
     return (
-        <>
-            <Head />
             <div className="accueil" id="accueil">
                 <div className="accueil-content">
                     <h1 className='accueil-content-title'>MENU SUSHI</h1>
@@ -52,7 +49,6 @@ function Accueil() {
                     </div>
                 </div>
             </div>
-        </>
     )
 }
 

@@ -7,10 +7,11 @@ interface linkNavbarProps  {
   currentPage:string,
   pageName: string,
   pageNameDisplay: string,
+  setModal?: React.Dispatch<React.SetStateAction<boolean | undefined>>,
 }
 function LinkNavbar(props:linkNavbarProps) {
   return (
-    <Link to={props.pageName} state={{ some: "value" }} onClick={() => props.page.page = props.pageName} style={{ color: props.currentPage === props.pageName ? 'blue' : 'none' }} >{props.pageNameDisplay}</Link>
+    <Link to={props.pageName} state={{ some: "value" }} onClick={() => {props.page.page = props.pageName; if(props.setModal) {props.setModal(false); }}} style={{ color: props.currentPage === props.pageName ? 'blue' : 'black' }} >{props.pageNameDisplay}</Link>
   )
 }
 
