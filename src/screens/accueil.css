@@ -1,0 +1,101 @@
+.accueil {    
+    width: 100%;
+    
+    margin-top: max(5vmin, 40px);
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    
+    font-size: 12px;
+}
+  
+.accueil-content {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.accueil-content-title {
+    font-size: 3.5rem;
+    font-family: "Righteous";
+    color: #000000;
+    font-weight: 600;
+    line-height: 1.325;
+}
+
+.accueil-content-description {
+    margin-top: 1vw;
+    display: flex;
+
+    width: 90%;
+}
+.accueil-content-description p {
+    font-size: 1rem;
+    transform: scale(0.74);
+    line-height: 1.5;
+
+    text-align:center;
+}
+
+.accueil-content-numero {
+    margin-top: 20px;
+
+    height: 41px;
+    width: 200px;
+    border: 1px solid black;
+    color: white;
+    border-radius: 3px;
+    align-content: center;
+    background-color: #C86D2B;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accueil-content-menu {
+    margin-top: 5vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accueil-content-menu img {
+    height: 574px;
+    width: 315px;
+
+    margin-bottom: 2vmin;
+}
+
+@media screen and  (max-width: 750px) {
+    .accueil-content-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .accueil-content-menu img {
+        width: 80vw;
+    }
+}
+.rotateInDownLeft {
+    animation-duration: 2.25s;
+    animation-name: rotateInDownLeft;
+    animation-iteration-count: 1;
+}
+@keyframes rotateInDownLeft {
+    0% {
+        transform-origin: left bottom;
+        transform: rotate3d(0,0,1, -45deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform-origin: left bottom;
+        transform: none;
+        opacity: 1;
+    }
+}

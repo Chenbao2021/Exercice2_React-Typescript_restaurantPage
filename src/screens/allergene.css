@@ -1,0 +1,28 @@
+.allergene {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.allergene-head {
+    height: max(10vh, 90px);
+    font-size: 150%;
+}
+.allergene-contents-description > * {
+    line-height: 40px;
+    color: #4a4a4a;
+}
+.allergene-contents-description > p {
+    color: gray
+}
+
+.allergene-contents-images {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.allergene-contents-images img {
+    width: 90%;
+}
